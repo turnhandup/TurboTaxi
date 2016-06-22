@@ -102,8 +102,9 @@ function init() {
 
                 
                 var leg = response.routes[0].legs[0];
-                alert(leg.distance.text);
-                alert(leg.duration.text);
+                document.getElementById("distance").textContent=parseFloat(leg.distance.text);
+                document.getElementById("time").textContent=parseInt(leg.duration.value/60);
+                document.getElementById("money").textContent=calcPrice(parseFloat(leg.distance.text));
             } else {
                 console.log("Cannot calculate route");
             }
@@ -121,7 +122,19 @@ function init() {
             }
         });
     }
+    
+    
 }
 
+function calcPrice(km) {
+    if(km<=5){
+        return 50;
+    }
+    else{
+        var price = (km-5)*3.5 + 50;
+        return price;
+        
+    }
+}
 //Коли сторінка завантажилась
 google.maps.event.addDomListener(window, 'load', init);
