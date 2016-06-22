@@ -122,9 +122,18 @@ function init() {
             }
         });
     }
-    
+    var date = new Date();
+    date.setDate(date.getDate());
+    $(function(){
+            $('#datetimepicker1').datetimepicker({minDate:date});
+    });
+
     
 }
+$(function () {
+    $('[data-toggle="popover"]').popover({trigger:"hover"})
+});
+
 
 function calcPrice(km) {
     if(km<=5){
@@ -136,5 +145,5 @@ function calcPrice(km) {
         
     }
 }
-//Коли сторінка завантажилась
+
 google.maps.event.addDomListener(window, 'load', init);
