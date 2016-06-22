@@ -20,6 +20,60 @@
 
                 <div class="detail col-sm-4 col-md-4 padding-less">
                     <div class="title col-sm-12 col-md-12">Деталі</div>
+                    <div class="form-group">
+                        <label for="sel1">Кількість людей:</label>
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Водій курець?</label>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Так</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Ні</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="sel2">Музика в салоні:</label>
+                                <select class="form-control" id="sel2">
+                                    <option>Рок</option>
+                                    <option>Поп</option>
+                                    <option>Шансон(ми все одно його не ввімкнемо)</option>
+                                    <option>Улюблена пісня твоєї колишньої</option>
+                                    <option>Джаз</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    <label for="carType">Тип машини?</label>
+                    <div class="btn-group" id="carType" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-default">Економ</button>
+                        <button type="button" class="btn btn-default">Економ+</button>
+                        <button type="button" class="btn btn-default">Вищий клас</button>
+                        <button type="button" class="btn btn-default">Грузове</button>
+                        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+                        <script>
+                            $(function () {
+                                $('[data-toggle="popover"]').popover()
+                            })
+                        </script>
+                    </div>
+                    <div class="form-group" >
+                        <label for="phoneNumber">Номер телефону:</label>
+                        <input class="form-control" id="phoneNumber" type="text">
+                    </div>
+
                 </div>
                 <div class="card container-fluid col-sm-7 col-md-7 padding-less">
                     <div class="title col-md-12">Звідки і куди</div>
@@ -35,7 +89,7 @@
                         <div class="detail-price">
                             <div class="distance bulb"><span id="distance" >Відстань: </span></div>
                             <div class="time bulb"><span id="time">Час: </span></div>
-                            <div class="money"><span id="money">Ціна: </span></div>
+                            <div class="money bulb"><span id="money">Ціна: </span></div>
                         </div>
                     </div>
                 </div>
