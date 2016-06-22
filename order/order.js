@@ -121,7 +121,18 @@ function init() {
             }
         });
     }
+    var date = new Date();
+    date.setDate(date.getDate());
+    $(function(){
+            $('#datetimepicker1').datetimepicker({minDate:date});
+    });
+    
 }
+                            $(function () {
+                                $('[data-toggle="popover"]').popover({trigger:"hover"})
+                            });
 
+                         
+                        
 //Коли сторінка завантажилась
 google.maps.event.addDomListener(window, 'load', init);
