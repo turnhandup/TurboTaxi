@@ -69,6 +69,11 @@ html {
 .intro-section .order-btn {
   margin-top: 90%;
 }
+.advantages {
+  text-align: left;
+  position: relative;
+  left: 40%;
+}
 .about-section {
   height: auto;
   padding-top: 50px;
@@ -89,6 +94,13 @@ html {
   margin-left: 50px;
   max-width: 50%;
   float: inherit;
+}
+.weWork {
+  font-size: 23px;
+  left: 40%;
+}
+.weWork .circles {
+  color: #fcc014;
 }
 .services-section {
   height: auto;
@@ -135,7 +147,7 @@ html {
   font-size: 30px;
 }
 .contact-section .phonesWrap .number {
-  color: #2f4f4f;
+  color: darkslategrey;
 }
 .contact-section li a {
   margin-bottom: 10px;
