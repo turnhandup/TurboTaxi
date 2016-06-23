@@ -95,6 +95,11 @@ html {
   max-width: 50%;
   float: inherit;
 }
+
+.services-section {
+  height: auto;
+  padding-top: 50px;
+  text-align: center;
 .weWork {
   font-size: 23px;
   left: 40%;
@@ -102,10 +107,6 @@ html {
 .weWork .circles {
   color: #fcc014;
 }
-.services-section {
-  height: auto;
-  padding-top: 50px;
-  text-align: center;
 }
 .services-section .vehicles div {
   height: 300px;
