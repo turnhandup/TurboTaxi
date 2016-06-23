@@ -104,7 +104,7 @@ function init() {
                 var leg = response.routes[0].legs[0];
                 document.getElementById("distance").textContent=parseFloat(leg.distance.text);
                 document.getElementById("time").textContent=parseInt(leg.duration.value/60);
-                document.getElementById("money").textContent=calcPrice(parseFloat(leg.distance.text));
+                document.getElementById("money").textContent=parceInt(calcPrice(parseFloat(leg.distance.text)));
             } else {
                 console.log("Cannot calculate route");
             }
