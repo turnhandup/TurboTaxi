@@ -1,0 +1,197 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color:black;
+}
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color:#dcdcdc;
+
+}
+.main-container .coloumn-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color:#dcdcdc;
+
+}
+.all-block {
+  height: 400px;
+
+}
+.all-block .card {
+  margin-top: 20px;
+  border-radius: 5px;
+  height: inherit;
+  background-color: #ffffff;
+  padding-top: 5px;
+}
+.all-block .card .title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: solid 1px #dcdcdc;
+  color: #fcc014;
+}
+.all-block .card .input-fields {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.all-block .card .input-fields .from {
+  width: 50%;
+  padding: 5px;
+  font-size: 12px;
+  border: 2px solid #dcdcdc;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.all-block .card .input-fields .to {
+  width: 50%;
+  padding: 5px;
+  font-size: 12px;
+  border: 2px solid #dcdcdc;
+  border-left: none;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.all-block .card .map-field {
+  height: 78%;
+  border-bottom-left-radius: 5px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+.all-block .card .map-field .map {
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 1px solid #dcdcdc;
+  border-right: none;
+}
+.all-block .card .price {
+  height: 88%;
+  padding: 10px;
+  padding-left: 0px;
+  padding-top: 0px;
+  border-bottom-right-radius: 5px;
+}
+.all-block .card .price .detail-price {
+  position: relative;
+  height: inherit;
+  border: solid 1px #dcdcdc;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.all-block .detail {
+  border-radius: 5px;
+  margin-top: 20px;
+  height: auto;
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.all-block .detail .title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: solid 1px #dcdcdc;
+  color: #fcc014;
+  background-color: white;
+}
+.margin-padding-less {
+  margin: 0%;
+  padding: 0%;
+}
+.padding-less {
+  padding: 0px;
+}
+.carType button {
+  margin: 100px;
+}
+.bulb {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.money {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  float: right;
+  float: bottom;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fcc014;
+}
+@media (max-width: 768px) {
+  .card {
+    height: auto!important;
+  }
+  .card .input-fields {
+    height: 50%!important;
+  }
+  .card .input-fields .from {
+    width: 100%!important;
+    border-radius: 0px!important;
+    border: 1px solid #dcdcdc !important;
+    margin-bottom: 5px;
+  }
+  .card .input-fields .to {
+    width: 100%!important;
+    border-radius: 0px!important;
+    border: 1px solid #dcdcdc !important;
+  }
+  .card .map-field {
+    display: none;
+  }
+  .card .price {
+    height: 50%!important;
+    padding: 0px !important;
+  }
+  .card .price .detail-price {
+    border-radius: 0px !important;
+  }
+}
+.wrapper {
+  height: 88%;
+  padding: 20px;
+  padding-bottom: 0px;
+
+}
+.radio {
+  display: inline;
+}
+.form-group {
+  margin-bottom: 12px;
+}
+.order-button {
+  cursor: pointer;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid #fcc014;
+  background-color: #F7F7F7;
+  color: #fcc014;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 8px;
+  float: right;
+}
+.order-button:hover {
+  color: white;
+  background-color: #fcc014;
+}
