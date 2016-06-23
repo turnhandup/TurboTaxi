@@ -69,11 +69,7 @@ html {
 .intro-section .order-btn {
   margin-top: 90%;
 }
-.advantages {
-  text-align: left;
-  position: relative;
-  left: 40%;
-}
+
 .about-section {
   height: auto;
   padding-top: 50px;
@@ -106,6 +102,11 @@ html {
 }
 .weWork .circles {
   color: #fcc014;
+}
+.advantages {
+  text-align: left;
+  position: relative;
+  left: 40%;
 }
 }
 .services-section .vehicles div {
